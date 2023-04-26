@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'user',
+    'todo',
     'rest_framework',
     'rest_framework_simplejwt',
     'django.contrib.admin',
