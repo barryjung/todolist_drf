@@ -39,6 +39,7 @@ class UserModel(AbstractBaseUser):
         max_length=255,
         unique=True,
     )
+    name = models.CharField(blank=True, max_length=16)
     genders = (("M", "male"), ("F", "female"),)
     gender = models.CharField(choices=genders, max_length=1, blank=True)
     age = models.IntegerField(blank=True, null=True)
